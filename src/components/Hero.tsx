@@ -199,12 +199,12 @@ const Hero = () => {
           {/* Animated stats */}
           <div className="grid grid-cols-3 gap-8 max-w-md mx-auto mb-12">
             <div className="text-center group relative">
-              <div className="text-2xl font-bold text-blue-600 group-hover:scale-110 transition-transform duration-300 group-hover:animate-pulse">5+</div>
+              <div className="text-2xl font-bold text-blue-600 group-hover:scale-110 transition-transform duration-300 group-hover:animate-pulse">1+</div>
               <div className="text-sm text-gray-600 font-medium group-hover:text-blue-600 transition-colors duration-300">Years Experience</div>
               <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-blue-400 rounded-full opacity-0 group-hover:opacity-100 animate-ping"></div>
             </div>
             <div className="text-center group relative">
-              <div className="text-2xl font-bold text-teal-600 group-hover:scale-110 transition-transform duration-300 group-hover:animate-pulse">50+</div>
+              <div className="text-2xl font-bold text-teal-600 group-hover:scale-110 transition-transform duration-300 group-hover:animate-pulse">5+</div>
               <div className="text-sm text-gray-600 font-medium group-hover:text-teal-600 transition-colors duration-300">Projects Done</div>
               <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-teal-400 rounded-full opacity-0 group-hover:opacity-100 animate-ping"></div>
             </div>
