@@ -181,7 +181,8 @@ const Hero = () => {
               <div className="absolute -top-1 -right-1 w-3 h-3 bg-green-400 rounded-full opacity-0 group-hover:opacity-100 animate-ping transition-opacity duration-300"></div>
             </a>
             <a 
-              href="#" 
+              href="https://www.linkedin.com/in/aman-mishra-a50552206/" 
+              target='_blank'
               className="group text-gray-600 hover:text-blue-600 transition-all duration-500 hover:scale-125 transform hover-glow p-3 rounded-full hover:bg-blue-50 relative"
             >
               <Linkedin size={28} className="group-hover:animate-wiggle" />
