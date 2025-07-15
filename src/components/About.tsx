@@ -1,5 +1,5 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { Award, Code, Heart, Zap } from 'lucide-react';
+import { useEffect, useRef, useState } from 'react';
+import {Code, Zap } from 'lucide-react';
 import profileImg from '../assets/Images/profile.jpg';
 
 
