@@ -31,6 +31,13 @@ const TechStack = () => {
       level: 95
     },
     {
+      name: "React.js",
+      icon: "⚛️",
+      description: "Modern frontend development for web apps",
+      color: "from-sky-400 to-indigo-400",
+      level: 90
+    },
+    {
       name: "JavaScript",
       icon: "🟨",
       description: "Programming language",
@@ -94,19 +101,12 @@ const TechStack = () => {
       level: 88
     },
     {
-      name: "AWS",
+      name: "Vercel",
       icon: "☁️",
       description: "Cloud computing platform",
       color: "from-yellow-500 to-orange-500",
       level: 75
     },
-    {
-      name: "Docker",
-      icon: "🐳",
-      description: "Containerization platform",
-      color: "from-blue-400 to-blue-600",
-      level: 70
-    }
   ];
 
   const skillCategories = [
@@ -130,7 +130,7 @@ const TechStack = () => {
             Tech <span className="gradient-text">Stack</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Technologies and tools I use to bring ideas to life and create amazing mobile experiences 
+            Technologies and tools I use to bring ideas to life and create amazing mobile experiences
             with cutting-edge solutions.
           </p>
         </div>
@@ -148,7 +148,7 @@ const TechStack = () => {
               <div className="text-center relative">
                 {/* Animated background */}
                 <div className={`absolute inset-0 bg-gradient-to-r ${tech.color} opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity duration-500`}></div>
-                
+
                 <div className="relative z-10">
                   <div className="text-5xl mb-4 group-hover:scale-125 transition-transform duration-500 animate-float">
                     {tech.icon}
@@ -159,13 +159,13 @@ const TechStack = () => {
                   <p className="text-sm text-gray-600 group-hover:text-gray-700 transition-colors duration-300">
                     {tech.description}
                   </p>
-                  
+
                   {/* Skill level indicator */}
                   <div className="mt-4">
                     <div className="bg-gray-200 rounded-full h-2 overflow-hidden">
                       <div
                         className={`h-full bg-gradient-to-r ${tech.color} rounded-full transition-all duration-1000 ease-out`}
-                        style={{ 
+                        style={{
                           width: hoveredTech === tech.name ? `${tech.level}%` : '0%',
                           transitionDelay: hoveredTech === tech.name ? '300ms' : '0ms'
                         }}
@@ -201,11 +201,11 @@ const TechStack = () => {
           <h3 className="text-3xl font-bold text-gray-900 mb-12 text-center">
             Skill <span className="gradient-text">Proficiency</span>
           </h3>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {skillCategories.map((item, index) => (
-              <div 
-                key={item.skill} 
+              <div
+                key={item.skill}
                 className={`bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 hover-lift animate-fade-in-up`}
                 style={{ animationDelay: `${700 + index * 150}ms` }}
               >
@@ -216,7 +216,7 @@ const TechStack = () => {
                 <div className="bg-gray-200 rounded-full h-4 overflow-hidden">
                   <div
                     className={`h-full bg-gradient-to-r ${item.color} rounded-full transition-all duration-2000 ease-out relative overflow-hidden`}
-                    style={{ 
+                    style={{
                       width: isVisible ? `${item.level}%` : '0%',
                       transitionDelay: `${1000 + index * 200}ms`
                     }}
@@ -234,8 +234,8 @@ const TechStack = () => {
         <div className={`mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 transition-all duration-1000 delay-1000 ${isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-20'}`}>
           {[
             { number: "12+", label: "Technologies", icon: "⚡" },
-            { number: "50+", label: "Projects Built", icon: "🚀" },
-            { number: "5+", label: "Years Experience", icon: "📅" },
+            { number: "5+", label: "Projects Built", icon: "🚀" },
+            { number: "1+", label: "Years Experience", icon: "📅" },
             { number: "100%", label: "Code Quality", icon: "✨" }
           ].map((stat, index) => (
             <div key={stat.label} className="text-center group">

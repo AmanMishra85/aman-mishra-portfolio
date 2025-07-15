@@ -7,11 +7,11 @@ const Hero = () => {
 
   useEffect(() => {
     setIsVisible(true);
-    
+
     const handleMouseMove = (e: MouseEvent) => {
       // Only track mouse on non-touch devices
       if (window.matchMedia('(hover: hover)').matches) {
-      setMousePosition({ x: e.clientX, y: e.clientY });
+        setMousePosition({ x: e.clientX, y: e.clientY });
       }
     };
 
@@ -41,7 +41,7 @@ const Hero = () => {
       {/* Dynamic Animated Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-25 via-white to-teal-25">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600/5 via-purple-600/5 to-teal-600/5 animate-gradient-xy"></div>
-        
+
         {/* Animated particles */}
         <div className="absolute inset-0">
           {[...Array(30)].map((_, i) => (
@@ -56,7 +56,7 @@ const Hero = () => {
               }}
             />
           ))}
-          
+
           {/* Additional floating shapes */}
           {[...Array(10)].map((_, i) => (
             <div
@@ -72,7 +72,7 @@ const Hero = () => {
           ))}
         </div>
       </div>
-      
+
       {/* Enhanced Floating Elements */}
       <div className="absolute top-20 left-10 w-96 h-96 bg-gradient-to-r from-blue-400/15 to-purple-400/15 rounded-full mix-blend-multiply filter blur-xl animate-blob"></div>
       <div className="absolute top-40 right-10 w-96 h-96 bg-gradient-to-r from-teal-400/15 to-green-400/15 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-2000"></div>
@@ -127,14 +127,14 @@ const Hero = () => {
               <div className="absolute -top-4 -right-4 w-4 h-4 bg-gradient-to-r from-blue-500 to-teal-500 rounded-full animate-bounce"></div>
             </span>
           </h1>
-          
+
           <div className="relative">
             <p className="text-2xl sm:text-3xl lg:text-4xl text-gray-700 mb-4 font-semibold animate-text-glow hover:scale-105 transition-transform duration-300 cursor-default">
               Mobile App Developer
               <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-blue-600 to-teal-600 rounded-full animate-pulse-slow"></div>
             </p>
           </div>
-          
+
           <div className="relative">
             <p className="text-lg sm:text-xl lg:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed font-medium hover:text-gray-700 transition-colors duration-300">
               Building <span className="text-blue-600 font-semibold">smooth</span> and{' '}
@@ -146,7 +146,7 @@ const Hero = () => {
             <div className="absolute -top-4 left-4 w-2 h-2 bg-blue-400 rounded-full animate-ping animation-delay-1200"></div>
             <div className="absolute -bottom-4 right-4 w-2 h-2 bg-teal-400 rounded-full animate-ping animation-delay-1800"></div>
           </div>
-          
+
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
             <button
               onClick={scrollToProjects}
@@ -158,7 +158,7 @@ const Hero = () => {
               </span>
               <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-pink-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-full"></div>
             </button>
-            
+
             <button
               onClick={scrollToContact}
               className="group border-3 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-10 py-5 rounded-full font-semibold text-lg transition-all duration-500 hover:scale-110 hover:shadow-2xl magnetic relative overflow-hidden"
@@ -173,23 +173,24 @@ const Hero = () => {
 
           {/* Enhanced Social Links */}
           <div className="flex justify-center space-x-8 mb-12">
-            <a 
-              href="#" 
+            <a
+              href="https://github.com/AmanMishra85"
+              target='_blank'
               className="group text-gray-600 hover:text-blue-600 transition-all duration-500 hover:scale-125 transform hover-glow p-3 rounded-full hover:bg-blue-50 relative"
             >
               <Github size={28} className="group-hover:animate-wiggle" />
               <div className="absolute -top-1 -right-1 w-3 h-3 bg-green-400 rounded-full opacity-0 group-hover:opacity-100 animate-ping transition-opacity duration-300"></div>
             </a>
-            <a 
-              href="https://www.linkedin.com/in/aman-mishra-a50552206/" 
+            <a
+              href="https://www.linkedin.com/in/aman-mishra-a50552206/"
               target='_blank'
               className="group text-gray-600 hover:text-blue-600 transition-all duration-500 hover:scale-125 transform hover-glow p-3 rounded-full hover:bg-blue-50 relative"
             >
               <Linkedin size={28} className="group-hover:animate-wiggle" />
               <div className="absolute -top-1 -right-1 w-3 h-3 bg-blue-400 rounded-full opacity-0 group-hover:opacity-100 animate-ping transition-opacity duration-300"></div>
             </a>
-            <a 
-              href="#" 
+            <a
+              href="mailto:aman.mishra9396@gmail.com"
               className="group text-gray-600 hover:text-blue-600 transition-all duration-500 hover:scale-125 transform hover-glow p-3 rounded-full hover:bg-blue-50 relative"
             >
               <Mail size={28} className="group-hover:animate-wiggle" />
@@ -211,15 +212,15 @@ const Hero = () => {
             </div>
             <div className="text-center group relative">
               <div className="text-2xl font-bold text-purple-600 group-hover:scale-110 transition-transform duration-300 group-hover:animate-pulse">100%</div>
-              <div className="text-sm text-gray-600 font-medium group-hover:text-purple-600 transition-colors duration-300">Client Satisfaction</div>
+              <div className="text-sm text-gray-600 font-medium group-hover:text-purple-600 transition-colors duration-300">Code Quality</div>
               <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-purple-400 rounded-full opacity-0 group-hover:opacity-100 animate-ping"></div>
             </div>
           </div>
         </div>
 
         {/* Enhanced Scroll Indicator */}
-        <div 
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce-slow group cursor-pointer" 
+        <div
+          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce-slow group cursor-pointer"
           onClick={(e) => {
             e.preventDefault();
             const element = document.getElementById('about');

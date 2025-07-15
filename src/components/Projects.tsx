@@ -1,5 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { ExternalLink, Github, Star, Eye, Heart } from 'lucide-react';
+import logisticsImg from '../assets/Images/logistics.png'
+import adminImg from '../assets/Images/admin.png'
+import vehilceImg from '../assets/Images/vehicle.png'
+import tripImg from '../assets/Images/trip.png'
 
 const Projects = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -28,7 +32,7 @@ const Projects = () => {
       id: 1,
       title: "FoodDelivery App",
       description: "Cross-platform food delivery app with real-time tracking, payment integration, and restaurant management system.",
-      image: "https://images.pexels.com/photos/4393021/pexels-photo-4393021.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: logisticsImg,
       technologies: ["React Native", "Node.js", "MongoDB", "Socket.io"],
       github: "#",
       live: "#",
@@ -39,7 +43,7 @@ const Projects = () => {
       id: 2,
       title: "Social Media App",
       description: "Instagram-like social platform with photo sharing, stories, real-time chat, and social interactions.",
-      image: "https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: adminImg,
       technologies: ["React Native", "Firebase", "Redux", "Expo"],
       github: "#",
       live: "#",
@@ -50,7 +54,7 @@ const Projects = () => {
       id: 3,
       title: "E-Commerce App",
       description: "Full-featured shopping app with product catalog, cart management, secure payments, and order tracking.",
-      image: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: vehilceImg,
       technologies: ["React Native", "Stripe API", "Express.js", "MongoDB"],
       github: "#",
       live: "#",
@@ -61,7 +65,7 @@ const Projects = () => {
       id: 4,
       title: "Fitness Tracker",
       description: "Health and fitness app with workout tracking, progress analytics, and social challenges.",
-      image: "https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: tripImg,
       technologies: ["React Native", "HealthKit", "Charts.js", "Firebase"],
       github: "#",
       live: "#",
