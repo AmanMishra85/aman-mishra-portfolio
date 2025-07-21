@@ -5,6 +5,8 @@ import Projects from './components/Projects';
 import TechStack from './components/TechStack';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import 'glightbox/dist/css/glightbox.min.css';
+
 
 function App() {
   return (

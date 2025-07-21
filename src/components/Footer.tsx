@@ -16,7 +16,7 @@ const Footer = () => {
     { name: "About", href: "#about" },
     { name: "Projects", href: "#projects" },
     { name: "Contact", href: "#contact" },
-    { name: "Resume", href: "#" }
+    // { name: "Resume", href: "#" }
   ];
 
   const services = [
@@ -29,10 +29,10 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { name: "LinkedIn", href: "#", color: "hover:text-blue-400" },
-    { name: "GitHub", href: "#", color: "hover:text-gray-300" },
-    { name: "Twitter", href: "#", color: "hover:text-blue-400" },
-    { name: "Instagram", href: "#", color: "hover:text-pink-400" }
+    { name: "LinkedIn", href: "#", color: "hover:text-blue-400",link:'https://www.linkedin.com/in/aman-mishra-a50552206/' },
+    { name: "GitHub", href: "#", color: "hover:text-gray-300", link:'https://github.com/AmanMishra85'},
+    // { name: "Twitter", href: "#", color: "hover:text-blue-400" },
+    // { name: "Instagram", href: "#", color: "hover:text-pink-400" }
   ];
 
   return (
@@ -58,11 +58,11 @@ const Footer = () => {
               {/* Enhanced stats */}
               <div className="grid grid-cols-3 gap-4 mb-6">
                 <div className="text-center group">
-                  <div className="text-2xl font-bold text-blue-400 group-hover:scale-110 transition-transform duration-300">5+</div>
+                  <div className="text-2xl font-bold text-blue-400 group-hover:scale-110 transition-transform duration-300">1+</div>
                   <div className="text-sm text-gray-400">Years</div>
                 </div>
                 <div className="text-center group">
-                  <div className="text-2xl font-bold text-teal-400 group-hover:scale-110 transition-transform duration-300">50+</div>
+                  <div className="text-2xl font-bold text-teal-400 group-hover:scale-110 transition-transform duration-300">6+</div>
                   <div className="text-sm text-gray-400">Projects</div>
                 </div>
                 <div className="text-center group">
@@ -79,7 +79,7 @@ const Footer = () => {
                 {socialLinks.map((social, index) => (
                   <a
                     key={social.name}
-                    href={social.href}
+                    href={social.link}
                     className={`group bg-gray-800 hover:bg-gray-700 p-3 rounded-full transition-all duration-300 hover:scale-110 hover:shadow-lg ${social.color} animate-fade-in-up`}
                     style={{ animationDelay: `${index * 100}ms` }}
                   >

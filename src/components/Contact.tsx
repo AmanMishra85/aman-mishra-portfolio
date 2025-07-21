@@ -39,19 +39,19 @@ const Contact = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate form submission with enhanced animation
     await new Promise(resolve => setTimeout(resolve, 2500));
-    
+
     setIsSubmitting(false);
     setFormData({ name: '', email: '', message: '' });
-    
+
     // Success animation
     const successMessage = document.createElement('div');
     successMessage.className = 'fixed top-4 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg z-50 animate-slide-down';
     successMessage.textContent = '✅ Message sent successfully!';
     document.body.appendChild(successMessage);
-    
+
     setTimeout(() => {
       successMessage.remove();
     }, 3000);
@@ -61,7 +61,7 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      value: "aman.mishra@email.com",
+      value: "aman.mishra9396@gmail.com",
       description: "Send me an email anytime!",
       color: "from-blue-500 to-blue-600",
       delay: "200ms"
@@ -69,7 +69,7 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Phone",
-      value: "+91 98765 43210",
+      value: "+91 85438 96439",
       description: "Call me for urgent matters",
       color: "from-teal-500 to-teal-600",
       delay: "400ms"
@@ -77,7 +77,7 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Location",
-      value: "Bangalore, India",
+      value: "Mumbai, India",
       description: "Available for remote work",
       color: "from-purple-500 to-purple-600",
       delay: "600ms"
@@ -85,10 +85,10 @@ const Contact = () => {
   ];
 
   const socialLinks = [
-    { name: "LinkedIn", color: "hover:bg-blue-100 hover:text-blue-600", delay: "800ms" },
-    { name: "GitHub", color: "hover:bg-gray-100 hover:text-gray-800", delay: "1000ms" },
-    { name: "Twitter", color: "hover:bg-blue-100 hover:text-blue-400", delay: "1200ms" },
-    { name: "Instagram", color: "hover:bg-pink-100 hover:text-pink-600", delay: "1400ms" }
+    { name: "LinkedIn", color: "hover:bg-blue-100 hover:text-blue-600", delay: "800ms", link: 'https://www.linkedin.com/in/aman-mishra-a50552206/' },
+    { name: "GitHub", color: "hover:bg-gray-100 hover:text-gray-800", delay: "1000ms", link: 'https://github.com/AmanMishra85' },
+    // { name: "Twitter", color: "hover:bg-blue-100 hover:text-blue-400", delay: "1200ms", link: '' },
+    // { name: "Instagram", color: "hover:bg-pink-100 hover:text-pink-600", delay: "1400ms", link: '' }
   ];
 
   return (
@@ -103,7 +103,7 @@ const Contact = () => {
             Let's <span className="gradient-text">Connect</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Have a project in mind or want to discuss mobile app development? 
+            Have a project in mind or want to discuss mobile app development?
             I'd love to hear from you and bring your ideas to life!
           </p>
         </div>
@@ -115,8 +115,8 @@ const Contact = () => {
               Ready to start your <span className="gradient-text">next project?</span>
             </h3>
             <p className="text-gray-600 mb-10 leading-relaxed text-lg">
-              Ready to bring your mobile app idea to life? Whether you need a complete app 
-              from scratch or want to enhance an existing project, I'm here to help you 
+              Ready to bring your mobile app idea to life? Whether you need a complete app
+              from scratch or want to enhance an existing project, I'm here to help you
               create something amazing that users will love.
             </p>
 
@@ -151,7 +151,7 @@ const Contact = () => {
                 {socialLinks.map((social, index) => (
                   <a
                     key={social.name}
-                    href="#"
+                    href={social.link}
                     className={`group bg-gray-100 ${social.color} px-6 py-3 rounded-full transition-all duration-500 hover:scale-110 hover:shadow-lg font-semibold animate-fade-in-up`}
                     style={{ animationDelay: social.delay }}
                   >
